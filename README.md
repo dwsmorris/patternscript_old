@@ -1,6 +1,13 @@
 # patternscript
 
-## install, debug
+## install
+
+1) Install node (and npm)
+https://nodejs.org/en/download/
+
+2) Obtain sources
+git clone 
+
 npm install
 
 npm start
