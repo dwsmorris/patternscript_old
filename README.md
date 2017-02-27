@@ -3,10 +3,20 @@
 ## install
 
 1) Install node (and npm)
+
 https://nodejs.org/en/download/
 
 2) Obtain sources
-git clone 
+
+git clone https://github.com/dwsmorris/patternscript.git
+
+3) Install
+
+cd patternscript
+
+npm install
+
+## Debug
 
 npm install
 
