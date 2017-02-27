@@ -14,6 +14,7 @@ git clone https://github.com/dwsmorris/patternscript.git
 ```
 cd patternscript
 npm install
+jspm install
 ```
 ## Debug
 
