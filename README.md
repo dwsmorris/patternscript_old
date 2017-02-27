@@ -13,7 +13,6 @@ git clone https://github.com/dwsmorris/patternscript.git
 3) Install
 
 cd patternscript
-
 npm install
 
 ## Debug
