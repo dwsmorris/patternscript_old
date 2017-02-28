@@ -18,9 +18,9 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "buffer": "npm:buffer@4.9.1",
     "core-js": "npm:core-js@1.2.7",
-    "dwsmorris/plugin-babel": "github:dwsmorris/plugin-babel@0.14.0",
-    "plugin-babel": "github:dwsmorris/plugin-babel@0.14.0/plugin-babel.js",
-    "systemjs-babel-build": "github:dwsmorris/plugin-babel@0.14.0/systemjs-babel-browser.js",
+    "dwsmorris/plugin-babel": "github:dwsmorris/plugin-babel@master",
+    "plugin-babel": "github:dwsmorris/plugin-babel@master/plugin-babel.js",
+    "systemjs-babel-build": "github:dwsmorris/plugin-babel@master/systemjs-babel-browser.js",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },

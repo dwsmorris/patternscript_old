@@ -9,7 +9,7 @@
   "jspm": {
     "dependencies": {
       "buffer": "npm:buffer@4.9.1",
-      "dwsmorris/plugin-babel": "github:dwsmorris/plugin-babel@^0.14.0"
+      "dwsmorris/plugin-babel": "github:dwsmorris/plugin-babel@master"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
