@@ -16,7 +16,7 @@ cd patternscript
 npm install
 jspm install
 ```
-## Debug
+## debug
 
 1) Launch server
 ```
@@ -26,7 +26,7 @@ npm start
 ```
 http://localhost:10001/debug.html
 ```
-## Build
+## build
 
 1) Compile
 ```
