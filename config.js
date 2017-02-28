@@ -1,7 +1,7 @@
 System.config({
   baseURL: "/",
   defaultJSExtensions: true,
-  transpiler: "babel",
+  transpiler: "plugin-babel",
   babelOptions: {
     "optional": [
       "runtime",
@@ -16,7 +16,11 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "buffer": "npm:buffer@4.9.1",
     "core-js": "npm:core-js@1.2.7",
+    "dwsmorris/plugin-babel": "github:dwsmorris/plugin-babel@0.14.0",
+    "plugin-babel": "github:dwsmorris/plugin-babel@0.14.0/plugin-babel.js",
+    "systemjs-babel-build": "github:dwsmorris/plugin-babel@0.14.0/systemjs-babel-browser.js",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -50,6 +54,15 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "ieee754": "npm:ieee754@1.1.8",
       "isarray": "npm:isarray@1.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:buffer@4.9.1": {
+      "base64-js": "npm:base64-js@1.2.0",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "ieee754": "npm:ieee754@1.1.8",
+      "isarray": "npm:isarray@1.0.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:core-js@1.2.7": {
