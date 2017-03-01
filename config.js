@@ -19,6 +19,7 @@ System.config({
     "buffer": "npm:buffer@4.9.1",
     "core-js": "npm:core-js@1.2.7",
     "dwsmorris/plugin-babel": "github:dwsmorris/plugin-babel@master",
+    "lodash": "npm:lodash@4.17.4",
     "plugin-babel": "github:dwsmorris/plugin-babel@master/plugin-babel.js",
     "systemjs-babel-build": "github:dwsmorris/plugin-babel@master/systemjs-babel-browser.js",
     "github:jspm/nodelibs-assert@0.1.0": {
