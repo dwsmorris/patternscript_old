@@ -70,7 +70,7 @@ two => 2
 addTwo => (+ 2)
 (log (addTwo 2)) // 4
 
-//(log ((+ 2) 3)) // 5
+(log ((+ 2) 3)) // 5
 
 add => (+)
 addOne => (add 1)
@@ -82,7 +82,7 @@ var environment = rootEnvironment();
 var evaluate = function(sexp) {
 	if (!_.isArray(sexp) || !sexp.length) return sexp;
 
-	var fn = environment[sexp[0]];
+	var fn = _.isArray(sexp[0]) ? evaluate(sexp[0]) : environment[sexp[0]];
 	var parameters = sexp.slice(1);
 	
 	if (_.isArray(fn)) return evaluate(fn.concat(parameters))
