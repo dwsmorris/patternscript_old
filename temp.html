@@ -1,5 +1,14 @@
-import _ from "lodash/fp";
+<!doctype html>
 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>patternscript</title>
+</head>
+
+<body>
+  <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+  <script>
 var script2lines = script => script.split("\n");
 var stripComments = line => {
 	var commentIndex = line.indexOf("//");
@@ -61,11 +70,11 @@ two => 2
 addTwo => (+ 2)
 (log (addTwo 2)) // 4
 
-// (log ((+ 2) 3)) // 5
+//(log ((+ 2) 3)) // 5
 
-// add => (+)
-// addOne => (add 1)
-// (log (addOne 5)) // 6
+add => (+)
+addOne => (add 1)
+(log (addOne 5)) // 6
 `
 
 var output = script2lines(script).map(_.flow(trim, stripComments, line2sexp, sexp2spaced, spaced2tokens, _.map(evaluateToken), tokens2ast));
@@ -84,4 +93,7 @@ var evaluate = function(sexp) {
 };
 _.each(evaluate, output);
 
-console.log(JSON.stringify(output));
+console.log(JSON.stringify(output));  
+  </script>
+</body>
+</html>
